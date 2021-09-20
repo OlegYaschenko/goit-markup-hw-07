@@ -1,0 +1,80 @@
+.header {
+  border-bottom: 1px solid $primary-border-color;
+}
+
+.nav-header {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -33px;
+  background-color: $accent-color;
+  border: 2px solid;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link {
+  transition: color 250ms $transition-timing-function;
+
+  padding: 32px 0px;
+
+  color: $title-text-color;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: $accent-color;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  color: $primary-text-color;
+}
+
+.address-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-list__link {
+  transition: color 250ms $transition-timing-function;
+
+  padding: 32px 0px;
+}
+
+.address-list__link:focus,
+.address-list__link:hover {
+  color: $accent-color;
+}
+
+.address-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

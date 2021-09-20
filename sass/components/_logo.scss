@@ -1,0 +1,12 @@
+.logo {
+  margin-right: 93px;
+
+  color: #000000;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+
+  &__accent {
+    @extend %accent;
+  }
+}
