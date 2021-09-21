@@ -1,29 +1,23 @@
-%accent {
-  color: var(--accent-color);
+.accent {
+  color: $accent-color;
 }
-%link {
+.link {
   text-decoration: none;
+  &.current {
+    color: $accent-color;
+  }
 }
-%link.current {
-  color: var(--accent-color);
-}
-
-%list {
+.list {
   list-style: none;
 }
-
-// Общие стили
-
 body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
-
+  color: $primary-text-color;
+  background-color: $primary-white-color;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.14;
 }
-
 h1,
 h2,
 h3,
@@ -35,17 +29,66 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid tomato; */
+  // outline: 2px solid tomato;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+// .accent {
+//   color: $accent-color;
+// }
+// .link {
+//   text-decoration: none;
+// }
+// .link.current {
+//   color: $accent-color;
+// }
+
+// .list {
+//   list-style: none;
+// }
+
+// body {
+//   color: var(--primary-text-color);
+//   background-color: var(--primary-white-color);
+
+//   font-family: 'Roboto', sans-serif;
+//   font-size: 14px;
+//   letter-spacing: 0.03em;
+//   line-height: 1.14;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// ul {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   /* outline: 2px solid tomato; */
+// }
+
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
